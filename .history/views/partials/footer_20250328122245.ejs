@@ -1,0 +1,33 @@
+<footer
+    style="position: relative; width: 100%; overflow: hidden; background-color: #f0f8ff;">
+    <div
+        style="position: absolute; bottom: 0; width: 100%; height: 150px; overflow: hidden; line-height: 0;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path
+                d="M-0.00,49.98 C150.00,150.00 349.88,-50.00 500.00,49.98 L500.00,150.00 L-0.00,150.00 Z"
+                style="stroke: none; fill: #1e90ff; animation: waveMove 5s infinite linear;">
+            </path>
+        </svg>
+    </div>
+
+    <div
+        style="padding: 40px 0; text-align: center; position: relative; z-index: 2;">
+        <p style="margin: 0; color: #333;">&copy; <%= new Date().getFullYear()
+            %> Your Company. All rights reserved.</p>
+    </div>
+
+    <style>
+    @keyframes waveMove {
+      0% {
+        d: path("M-0.00,49.98 C150.00,150.00 349.88,-50.00 500.00,49.98 L500.00,150.00 L-0.00,150.00 Z");
+      }
+      50% {
+        d: path("M0,60 C150,100 350,0 500,60 L500,150 L0,150 Z");
+      }
+      100% {
+        d: path("M-0.00,49.98 C150.00,150.00 349.88,-50.00 500.00,49.98 L500.00,150.00 L-0.00,150.00 Z");
+      }
+    }
+  </style>
+</footer>
